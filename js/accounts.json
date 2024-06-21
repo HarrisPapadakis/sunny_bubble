@@ -1,0 +1,25 @@
+{
+	"accounts": [
+		{
+			"id":1,
+			"fullname":"Γεώργιος Παπαδόπουλος",
+			"username":"gp",
+			"password":"gp",
+			"login":"0"
+		},
+		{
+			"id":2,
+			"fullname":"Νικόλαος Χρυσός",
+			"username":"nh",
+			"password":"nh",
+			"login":"0"
+		},
+		{
+			"id":3,
+			"fullname":"Μανώλης Ασημακης",
+			"username":"ma",
+			"password":"ma",
+			"login":"0"
+		}
+	]
+}

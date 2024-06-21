@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="./css/apousies.css">
+<script src="./js/apousies.js"></script>
+<body onload="viewApousies()">
+    <form name="apousies">
+        <div class="container" align="center">
+            <h1>Καρτέλα Εισαγωγής Απουσιών</h1>
+            <table>
+                <tr>
+                	<td>
+	                    <select id="teachers">
+	                        <option value="1">Καθηγητής1</option>
+	                        <option value="2">Καθηγητής2</option>
+	                        <option value="3">Καθηγητής3</option>
+	                    </select>
+                	</td>
+                    <td>
+                    	<select id="students">
+	                        <option value="1">Μαθητής1</option>
+	                        <option value="2">Μαθητής2</option>
+	                        <option value="3">Μαθητής3</option>
+	                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    	<select id="lessons">
+	                        <option value="1">Μάθημα1</option>
+	                        <option value="2">Μάθημα2</option>
+	                        <option value="3">Μάθημα3</option>
+	                    </select>
+                    </td>
+                    <td><input type="date" name="day"></td>
+                </tr>
+                <tr><td><input type="textarea" name="note"></td></tr>
+            </table>
+            <div class="clearfix">
+                <button class="insert" onclick="insertApousies()">Εισαγωγή</button>
+                <button onclick="editApousies()">Διόρθωση</button>
+                <button class="delete" onclick="deleteApousies()">Διαγραφή</button>
+            </div>
+            <hr>
+            <table id="view" class="view">
+                <tr>
+                    <th>Καθηγητής</th>
+                    <th>Μαθητής</th>
+                    <th>Μάθημα</th>
+                    <th>Ημερομηνία</th>
+                    <th>Σχόλια</th>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>

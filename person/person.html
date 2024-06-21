@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="./css/person.css">
+<script src="./js/person.js"></script>
+<body onload="viewPersons()">
+    <form name="person">
+        <div class="container" align="center">
+            <h1>Καρτέλα Εισαγωγής Προσωπικού</h1>
+            <table>
+                <tr>
+                    <select id="person_type">
+                        <option value="1">Γραμματεία</option>
+                        <option value="2" selected>Καθηγητής</option>
+                        <option value="3">Σπουδαστής</option>
+                    </select>
+                <tr>
+                    <td><label for="name"><b>Όνομα</b></label></td>
+                    <td><input type="text" placeholder="Εισαγωγή Όνομα" name="name"></td>
+                    <td><label for="surname"><b>Επίθετο</b></label></td>
+                    <td><input type="text" placeholder="Εισαγωγή Επίθετο" name="surname"></td>
+                </tr>
+                <tr>
+                    <td><label for="email"><b>Ηλεκ. Ταχυδ.</b></label></td>
+                    <td><input type="text" placeholder="Εισαγωγή Ηλεκ. Ταχυδ." name="email"></td>
+                    <td><label for="phone"><b>Τηλέφωνο</b></label></td>
+                    <td><input type="text" placeholder="Εισαγωγή Τηλέφωνο" name="phone"></td>
+                </tr>
+            </table>
+            <div class="clearfix">
+                <button class="insert" onclick="insertPerson()">Εισαγωγή</button>
+                <button onclick="editPerson()">Διόρθωση</button>
+                <button class="delete" onclick="deletePerson()">Διαγραφή</button>
+            </div>
+            <hr>
+            <table id="view" class="view">
+                <tr onclick="getInfo(this);">
+                    <th>Τύπος</th>
+                    <th>Όνομα</th>
+                    <th>Επίθετο</th>
+                    <th>Ηλεκ. Ταχυδ.</th>
+                    <th>Τηλέφωνο</th>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
