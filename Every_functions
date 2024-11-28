@@ -1,0 +1,73 @@
+# Create a list of mountains
+
+mountains = ["Everest", "Kilimanjaro", "Denali", "Elbrus", "Matterhorn"]
+
+
+
+# Print the original list
+
+print("\nOriginal list of mountains:")
+
+print(mountains)
+
+
+
+# Print the list in alphabetical order without modifying the original list
+
+print("\nMountains in alphabetical order:")
+
+print(sorted(mountains))
+
+
+
+# Show the original list is unchanged
+
+print("\nOriginal list of mountains after sorted():")
+
+print(mountains)
+
+
+
+# Reverse the order of the list and print it
+
+mountains.reverse()
+
+print("\nMountains after reverse():")
+
+print(mountains)
+
+
+
+# Restore the original order of the list
+
+mountains.reverse()
+
+print("\nMountains restored to original order after reverse():")
+
+print(mountains)
+
+
+
+# Permanently sort the list in alphabetical order
+
+mountains.sort()
+
+print("\nMountains after sort() in alphabetical order:")
+
+print(mountains)
+
+
+
+# Permanently sort the list in reverse alphabetical order
+
+mountains.sort(reverse=True)
+
+print("\nMountains after sort() in reverse alphabetical order:")
+
+print(mountains)
+
+
+
+# Print the number of mountains using len()
+
+print(f"\nNumber of mountains in the list: {len(mountains)}")
