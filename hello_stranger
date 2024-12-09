@@ -1,0 +1,21 @@
+# main.py
+
+def greet_user(name):
+    """
+    Συνάρτηση που καλωσορίζει τον χρήστη με το όνομά του.
+    """
+    if not name:
+        return "Γεια σου, άγνωστε χρήστη!"
+    return f"Γεια σου, {name}!"
+
+def main():
+    """
+    Κύρια συνάρτηση του προγράμματος.
+    """
+    print("Καλωσήρθες στην εφαρμογή Hello World!")
+    name = input("Ποιο είναι το όνομά σου; ")
+    message = greet_user(name)
+    print(message)
+
+if __name__ == "__main__":
+    main()
